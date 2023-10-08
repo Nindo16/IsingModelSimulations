@@ -45,10 +45,6 @@ L'objectif principal était de comparer différents algorithmes de Monte Carlo p
 
 ![Insérez votre image de convergence des trajectoires ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/convergence_trajectoire_s_b_2.png)
 
-- **Convergence en loi**:
-  - Faible erreur pour des valeurs de \( \beta \) élevées.
-
-![Insérez votre image de convergence en loi ici](lien_vers_votre_image_convergence_en_loi)
 
 ### Comparaison des algorithmes de cluster
 
@@ -60,9 +56,6 @@ L'objectif principal était de comparer différents algorithmes de Monte Carlo p
   - Wolff converge plus rapidement que Swendsen Wang.
 
 ![Insérez votre image de convergence des trajectoires en temps de cluster ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/wf_sw_b_0_8_temps.png)
-
-- **Convergence en loi**:
-  - Les deux algorithmes montrent une faible erreur pour des valeurs élevées de \( \beta \).
 
 
 ## Conclusion
