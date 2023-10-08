@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Ce dépôt concerne la simulation du modèle d'Ising, un modèle mathématique en physique statistique. En utilisant des techniques d'énumération et de calcul de l'énergie associées aux configurations binaires, nous explorons efficacement l'ensemble des configurations possibles. La simulation exacte, bien que précise, est limitée aux grilles de petite taille.
+Le modèle d'Ising est un modèle fondamental en physique statistique, utilisé pour décrire les transitions de phase des systèmes magnétiques. Ce projet se penche sur la simulation du modèle d'Ising en utilisant des algorithmes de type Monte Carlo par chaîne de Markov (MCMC). La comparaison est basée sur la simulation de la loi exacte réalisée sur des grilles de petite taille.
 
 ## Objectif du projet
 
-L'objectif principal de ce travail était de comparer différents algorithmes de Monte Carlo par chaîne de Markov (MCMC) pour la simulation du modèle d'Ising.
+L'objectif principal était de comparer différents algorithmes de Monte Carlo par chaîne de Markov (MCMC) pour la simulation du modèle d'Ising. Notons que cette comparaison est limitée aux grilles de petite taille.
 
 ## Algorithmes comparés
 
@@ -22,26 +22,26 @@ L'objectif principal de ce travail était de comparer différents algorithmes de
 1. **Autocorrélation** : Utilisé la magnétisation pour évaluer l'autocorrélation.
 2. **Convergence des trajectoires** : Évalué la vitesse de convergence des algorithmes.
 3. **Convergence en loi** : Observé la convergence de l'erreur en fonction de la taille de la chaîne de Markov.
-4. **Influence de la probabilité d'acceptation** : Examined l'impact de la probabilité d'acceptation sur la convergence.
+4. **Influence de la probabilité d'acceptation** : Examiné l'impact de la probabilité d'acceptation sur la convergence.
 
 ### Comparaison des algorithmes de cluster
 
-1. **Autocorrélation** : Les algorithmes de cluster ont été évalués pour déterminer la rapidité avec laquelle ils oublient la configuration initiale.
+1. **Autocorrélation** : Les algorithmes de cluster ont été évalués sur ce critère pour déterminer la rapidité avec laquelle ils oublient la configuration initiale.
 2. **Convergence des trajectoires en temps** : La vitesse à laquelle les algorithmes convergent vers la loi cible a été mesurée.
 3. **Convergence en loi** : Étudié la convergence en loi pour des valeurs de \( \beta \) élevées.
 
-## Résultats clés
+## Résultats
 
 ### Comparaison des algorithmes
 
 - **Autocorrélation**:
   - Metropolis est généralement plus rapide que Heat Bath.
-  - Probabilité d'acceptation plus élevée avec Metropolis comparé à Heat Bath.
+  - Probabilité d'acceptation plus élevée pour l'algorithme de Metropolis.
 
 ![Insérez votre image d'autocorrélation ici](lien_vers_votre_image_autocorrélation)
 
 - **Convergence des trajectoires**:
-  - Metropolis Hastings converge généralement plus rapidement.
+  - Metropolis Hastings converge plus rapidement.
 
 ![Insérez votre image de convergence des trajectoires ici](lien_vers_votre_image_convergence_trajectoires)
 
@@ -53,7 +53,7 @@ L'objectif principal de ce travail était de comparer différents algorithmes de
 ### Comparaison des algorithmes de cluster
 
 - **Autocorrélation**:
-  - Les algorithmes de cluster oublient rapidement la configuration initiale.
+  - Les algorithmes de cluster oublient plus rapidement la configuration initiale.
 
 ![Insérez votre image d'autocorrélation de cluster ici](lien_vers_votre_image_autocorrélation_cluster)
 
@@ -69,5 +69,4 @@ L'objectif principal de ce travail était de comparer différents algorithmes de
 
 ## Conclusion
 
-Les algorithmes de Monte Carlo par chaîne de Markov permettent la simulation sur de grandes grilles. L'algorithme de Wolff semble être le plus performant parmi les méthodes testées.
-
+Les algorithmes de Monte Carlo par chaîne de Markov permettent la simulation sur de grandes grilles. Cependant, la comparaison de leur efficacité a été effectuée principalement sur des grilles de petite taille en raison de la complexité du calcul de la loi exacte pour des grilles plus grandes. Parmi les méthodes testées, l'algorithme de Wolff semble être le plus performant.
