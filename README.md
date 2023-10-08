@@ -38,12 +38,12 @@ L'objectif est de comparer différents algorithmes MCMC pour la simulation du mo
   - L'autocorrélation de Metropolis décroît plus rapidement vers 0 comparée à celle de Heat Bath.
   - L'algorithme de Metropolis présente une probabilité d'acceptation plus élevée.
 
-![Autocorrélation](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/autocorr_s_b_1.png)
+![Autocorrélation](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/img/autocorr_s_b_1.png)
 
 - **Convergence des trajectoires**:
   - Metropolis Hastings converge plus rapidement.
 
-![Convergence des trajectoires](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/convergence_trajectoire_s_b_2.png)
+![Convergence des trajectoires](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/img/convergence_trajectoire_s_b_2.png)
 
 ### Comparaison des algorithmes de cluster
 
@@ -53,7 +53,7 @@ L'objectif est de comparer différents algorithmes MCMC pour la simulation du mo
 - **Convergence des trajectoires en temps**:
   - L'algorithme de Wolff converge plus vite que celui de Swendsen-Wang.
 
-![Convergence des trajectoires en temps de cluster](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/wf_sw_b_0_8_temps.png)
+![Convergence des trajectoires en temps de cluster](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/img/wf_sw_b_0_8_temps.png)
 
 ## Conclusion
 
