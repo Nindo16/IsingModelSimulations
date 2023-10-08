@@ -38,12 +38,12 @@ L'objectif principal était de comparer différents algorithmes de Monte Carlo p
   - Metropolis est généralement plus rapide que Heat Bath.
   - Probabilité d'acceptation plus élevée pour l'algorithme de Metropolis.
 
-![Insérez votre image d'autocorrélation ici](lien_vers_votre_image_autocorrélation)
+![Insérez votre image d'autocorrélation ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/autocorr_s_b_1.png)
 
 - **Convergence des trajectoires**:
   - Metropolis Hastings converge plus rapidement.
 
-![Insérez votre image de convergence des trajectoires ici](lien_vers_votre_image_convergence_trajectoires)
+![Insérez votre image de convergence des trajectoires ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/convergence_trajectoire_s_b_2.png)
 
 - **Convergence en loi**:
   - Faible erreur pour des valeurs de \( \beta \) élevées.
@@ -55,17 +55,15 @@ L'objectif principal était de comparer différents algorithmes de Monte Carlo p
 - **Autocorrélation**:
   - Les algorithmes de cluster oublient plus rapidement la configuration initiale.
 
-![Insérez votre image d'autocorrélation de cluster ici](lien_vers_votre_image_autocorrélation_cluster)
 
 - **Convergence des trajectoires en temps**:
   - Wolff converge plus rapidement que Swendsen Wang.
 
-![Insérez votre image de convergence des trajectoires en temps de cluster ici](lien_vers_votre_image_convergence_trajectoires_temps_cluster)
+![Insérez votre image de convergence des trajectoires en temps de cluster ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/wf_sw_b_0_8_temps.png)
 
 - **Convergence en loi**:
   - Les deux algorithmes montrent une faible erreur pour des valeurs élevées de \( \beta \).
 
-![Insérez votre image de convergence en loi de cluster ici](lien_vers_votre_image_convergence_en_loi_cluster)
 
 ## Conclusion
 
