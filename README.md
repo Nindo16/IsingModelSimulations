@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Le modèle d'Ising est un modèle fondamental en physique statistique, utilisé pour décrire les transitions de phase des systèmes magnétiques. Ce projet se penche sur la simulation du modèle d'Ising en utilisant des algorithmes de type Monte Carlo par chaîne de Markov (MCMC). La comparaison est basée sur la simulation de la loi exacte réalisée sur des grilles de petite taille.
+Le modèle d'Ising est essentiel en physique statistique. Il est couramment utilisé pour décrire les transitions de phase dans les systèmes magnétiques. Ce projet vise à simuler le modèle d'Ising en utilisant des algorithmes Monte Carlo par chaîne de Markov (MCMC). La comparaison est effectuée en se basant sur la loi exacte obtenue en la simulant sur des grilles de petites tailles.
 
 ## Objectif du projet
 
-L'objectif principal était de comparer différents algorithmes de Monte Carlo par chaîne de Markov (MCMC) pour la simulation du modèle d'Ising. Notons que cette comparaison est limitée aux grilles de petite taille.
+L'objectif est de comparer différents algorithmes MCMC pour la simulation du modèle d'Ising. Il est à noter que cette comparaison se limite aux grilles de petite taille, en raison des limitations inhérentes à la simulation de la loi exacte.
 
 ## Algorithmes comparés
 
@@ -19,45 +19,42 @@ L'objectif principal était de comparer différents algorithmes de Monte Carlo p
 
 ### Comparaison des algorithmes de type "single flip"
 
-1. **Autocorrélation** : Utilisé la magnétisation pour évaluer l'autocorrélation.
-2. **Convergence des trajectoires** : Évalué la vitesse de convergence des algorithmes.
-3. **Convergence en loi** : Observé la convergence de l'erreur en fonction de la taille de la chaîne de Markov.
-4. **Influence de la probabilité d'acceptation** : Examiné l'impact de la probabilité d'acceptation sur la convergence.
+1. **Autocorrélation** : Évaluation basée sur la magnétisation.
+2. **Convergence des trajectoires** : Mesure de la vitesse de convergence des différents algorithmes.
+3. **Convergence en loi** : Analyse de la convergence de l'erreur relative à la taille de la chaîne de Markov.
+4. **Influence de la probabilité d'acceptation** : Étude de son impact sur la convergence.
 
 ### Comparaison des algorithmes de cluster
 
-1. **Autocorrélation** : Les algorithmes de cluster ont été évalués sur ce critère pour déterminer la rapidité avec laquelle ils oublient la configuration initiale.
-2. **Convergence des trajectoires en temps** : La vitesse à laquelle les algorithmes convergent vers la loi cible a été mesurée.
-3. **Convergence en loi** : Étudié la convergence en loi pour des valeurs de \( \beta \) élevées.
+1. **Autocorrélation** : Évaluation de la vitesse à laquelle les algorithmes de cluster oublient leur configuration initiale.
+2. **Convergence des trajectoires en temps** : Mesure de la rapidité de convergence des algorithmes vers la loi cible.
+3. **Convergence en loi** : Analyse de la convergence pour des valeurs élevées de \( \beta \).
 
 ## Résultats
 
 ### Comparaison des algorithmes
 
 - **Autocorrélation**:
-  - Metropolis est généralement plus rapide que Heat Bath.
-  - Probabilité d'acceptation plus élevée pour l'algorithme de Metropolis.
+  - L'autocorrélation de Metropolis décroît plus rapidement vers 0 comparée à celle de Heat Bath.
+  - L'algorithme de Metropolis présente une probabilité d'acceptation plus élevée.
 
-![Insérez votre image d'autocorrélation ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/autocorr_s_b_1.png)
+![Autocorrélation](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/autocorr_s_b_1.png)
 
 - **Convergence des trajectoires**:
   - Metropolis Hastings converge plus rapidement.
 
-![Insérez votre image de convergence des trajectoires ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/convergence_trajectoire_s_b_2.png)
-
+![Convergence des trajectoires](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/convergence_trajectoire_s_b_2.png)
 
 ### Comparaison des algorithmes de cluster
 
 - **Autocorrélation**:
-  - Les algorithmes de cluster oublient plus rapidement la configuration initiale.
-
+  - Les algorithmes de cluster oublient la configuration initiale plus rapidement.
 
 - **Convergence des trajectoires en temps**:
-  - Wolff converge plus rapidement que Swendsen Wang.
+  - L'algorithme de Wolff converge plus vite que celui de Swendsen-Wang.
 
-![Insérez votre image de convergence des trajectoires en temps de cluster ici](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/wf_sw_b_0_8_temps.png)
-
+![Convergence des trajectoires en temps de cluster](https://raw.githubusercontent.com/Nindo16/IsingModelSimulations/main/wf_sw_b_0_8_temps.png)
 
 ## Conclusion
 
-Les algorithmes de Monte Carlo par chaîne de Markov permettent la simulation sur de grandes grilles. Cependant, la comparaison de leur efficacité a été effectuée principalement sur des grilles de petite taille en raison de la complexité du calcul de la loi exacte pour des grilles plus grandes. Parmi les méthodes testées, l'algorithme de Wolff semble être le plus performant.
+Bien que les algorithmes MCMC autorisent la simulation sur de grandes grilles, leur comparaison a été principalement réalisée sur des grilles de petite taille. Cela est dû aux défis associés au calcul de la loi exacte pour des grilles plus vastes. L'algorithme de Wolff s'est distingué comme étant le plus performant parmi les méthodes évaluées.
