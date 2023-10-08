@@ -57,4 +57,4 @@ L'objectif est de comparer différents algorithmes MCMC pour la simulation du mo
 
 ## Conclusion
 
-Bien que les algorithmes MCMC autorisent la simulation sur de grandes grilles, leur comparaison a été principalement réalisée sur des grilles de petite taille. Cela est dû aux défis associés au calcul de la loi exacte pour des grilles plus vastes. L'algorithme de Wolff s'est distingué comme étant le plus performant parmi les méthodes évaluées.
+Bien que les algorithmes MCMC autorisent la simulation sur de grandes grilles, leur comparaison a été principalement réalisée sur des grilles de petite taille. Cela est dû à la difficulté associés au calcul de la loi exacte pour des grilles de plus grande taille. L'algorithme de Wolff s'est distingué comme étant le plus performant sur les différents critères de comparaisons.
